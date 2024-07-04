@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 import yt_dlp as youtube_dl
 from collections import deque
+from config import token 
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -119,4 +120,4 @@ async def play_song(ctx, info):
         is_playing = False
 
 
-bot.run('token')
+bot.run(token)
